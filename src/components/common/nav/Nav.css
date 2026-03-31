@@ -1,0 +1,34 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 20px 0;
+}
+
+li {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-h);
+}
