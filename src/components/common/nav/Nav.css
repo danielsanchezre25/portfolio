@@ -1,9 +1,14 @@
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   border-bottom: 1px solid var(--border);
+  z-index: 1000;
 }
 
 ul {
@@ -31,4 +36,13 @@ a {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--text-h);
+}
+
+.scrolled {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dot {
+  color: var(--accent);
 }

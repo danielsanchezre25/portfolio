@@ -1,0 +1,80 @@
+.contact-container {
+  margin-bottom: 10rem;
+}
+
+.input-group {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 18px 14px;
+  font-size: 16px;
+
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+.input-group textarea {
+  width: 100%;
+  padding: 18px 14px;
+  font-size: 16px;
+
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+/* label dentro del input */
+
+.input-group label {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+
+/* cuando el input tiene foco */
+
+.input-group input:focus + label {
+  top: 8px;
+  font-size: 12px;
+  color: #000;
+}
+
+/* cuando el input tiene texto */
+
+.input-group input:not(:placeholder-shown) + label {
+  top: 8px;
+  font-size: 12px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+
+  background: var(--accent);
+  border: none;
+  border-radius: 2px;
+
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  transform: scale(1.02);
+  background: #1ed760;
+}

@@ -3,13 +3,14 @@ import './Switch.css';
 
 interface SwitchProps {
   defaultOn?: boolean;
-  onChange?: (isOn: boolean) => void;
+  onChange?: () => void;
 }
 
-export const Switch: React.FC<SwitchProps> = ({ defaultOn = false, onChange }) => {
+export const Switch: React.FC<SwitchProps> = ({ defaultOn, onChange }) => {
   const [isOn, setIsOn] = useState(defaultOn);
 
   const toggleSwitch = () => {
+    onChange?.();
     setIsOn(!isOn);
   };
 

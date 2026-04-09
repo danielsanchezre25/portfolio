@@ -1,8 +1,12 @@
 header {
-  height: 50vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 0 0 5% 10%;
 }
 
 header h1 {
@@ -26,9 +30,21 @@ header h2 {
   .network {
     width: 30px;
     transition: transform 0.3s;
+    fill: #fff;
 
     &:hover {
+      fill: var(--accent);
       transform: translateY(-2px);
     }
+  }
+}
+
+.avatar {
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 6rem;
+
+  img {
+    width: 18vw;
   }
 }

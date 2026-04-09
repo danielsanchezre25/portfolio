@@ -1,6 +1,4 @@
-.about-text {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-  padding: 0 70px;
+.about-container {
+  padding-right: 70px;
+  margin-bottom: 10rem;
 }

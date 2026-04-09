@@ -5,3 +5,18 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.languages {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px; 
+}
+
+.languages span {
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}

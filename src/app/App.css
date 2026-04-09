@@ -1,18 +1,9 @@
 .main-section {
-  width: 100%;
-  max-width: 1400px;
-  height: 90vh;
-  margin: 0 auto;
-  box-sizing: border-box;
-  display: flex;
-  gap: 100px;
-  padding-top: 6rem;
-
-  .about-section {
-    flex: 1;
-    padding-top: 6rem;
-  }
+  margin-top: 11rem;
+  margin-left: 50vw;
+  padding-right: 10rem;
 }
+
 
 #center {
   display: flex;

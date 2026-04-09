@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Nav from '../components/common/nav/Nav'
 import { Contact } from '../features/contact/Contact'
@@ -10,14 +10,11 @@ function App() {
   return (
     <>
       <Nav />
+      <Header />
       <section className='main-section'>
-        <div className='about-section'>
-          <Header />
-        </div>
-        <div>  
-          <About />
-          <Projects />
-        </div>
+        <About />
+        <Projects />
+        <Contact />
       </section>
     </>
   )
