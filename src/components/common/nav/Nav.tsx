@@ -36,9 +36,9 @@ export const Nav: React.FC = () => {
         DS<span className="dot">.</span>
       </div>
       <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/about">Acerca de</a></li>
+        <li><a href="/projects">Proyectos</a></li>
+        <li><a href="/contact">Contacto</a></li>
       </ul>
       <Switch defaultOn={theme === 'dark'} onChange={toggleTheme} />
     </nav>

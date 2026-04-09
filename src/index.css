@@ -1,12 +1,12 @@
 :root[data-theme='light'] {
   --text: #202020;
-  --text-h: #000000;
+  --text-h: #002e42;
   --bg: #ebd9c8;
-  --bg: linear-gradient(1deg,#ffe0ba 0%, rgba(235, 217, 200, 1) 100%);
-  --code-bg: #f4f3ec;
-  --accent: #007a7a;
-  --accent-bg: rgba(0, 122, 122, 0.1);
-  --accent-border: rgba(0, 122, 122, 0.5);
+  --bg: linear-gradient(1deg,#fcd4a4 0%, rgba(235, 217, 200, 1) 100%);
+  --input-bg: #f4f3ec;
+  --accent: #fea02f;
+  --accent-bg: rgba(254, 160, 47, 0.1);
+  --accent-border: rgba(254, 160, 47, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
@@ -16,17 +16,20 @@
 }
 
 :root[data-theme='dark'] {
-  --text: #c2c2c2;
+  --text: #e2e2e2;
   --text-h: #ffffff;
   --bg: #002e42;
   --bg: linear-gradient(1deg,rgb(0, 57, 82) 0%, rgba(0, 25, 36, 1) 100%);
-  --code-bg: #f4f3ec;
+  --input-bg: #f4f3ec;
   --accent: #fea02f;
   --accent-bg: rgba(254, 160, 47, 0.1);
   --accent-border: rgba(254, 160, 47  , 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    rgba(255, 255, 255, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  color: var(--text);
+  background: var(--bg);
 }
 
 :root {
@@ -63,7 +66,6 @@
 
 body {
   margin: 0;
-  color: var(--text);
 }
 
 h1,
@@ -76,7 +78,6 @@ h2 {
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
-  margin: 32px 0;
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
