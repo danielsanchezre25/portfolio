@@ -1,12 +1,14 @@
 import React from 'react';
 import './Header.css';
-import Avatar from '../../assets/react.svg';
+import LaptopIcon from '../../components/common/laptopIcon/LaptopIcon';
+import { useTheme } from '../../hooks/ThemeContext/ThemeContext';
 
 export const Header: React.FC = () => {
+  const { theme } = useTheme();
   return (
     <header>
       <div className="avatar">
-        <img src={Avatar} alt="Avatar" />
+        <LaptopIcon isDarkMode={theme !== 'dark'} />
       </div>
       <h1>Daniel Sánchez Restrepo</h1>
       <h2>Fullstack Engineer</h2>

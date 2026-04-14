@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import './Nav.css';
 import { Switch } from '../switch/Switch';
+import { useTheme } from '../../../hooks/ThemeContext/ThemeContext';
 
 export const Nav: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
-    const isDarkModeDefault = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    return isDarkModeDefault ? 'dark' : 'light';
-  })
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, []);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,12 +18,6 @@ export const Nav: React.FC = () => {
     };
   });
 
-  const toggleTheme = () => {
-    document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'light' : 'dark');
-    console.log(document.documentElement.getAttribute('data-theme'))
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  }
-
   return (
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
       <div className='nav-logo'>
@@ -40,7 +28,7 @@ export const Nav: React.FC = () => {
         <li><a href="/projects">Proyectos</a></li>
         <li><a href="/contact">Contacto</a></li>
       </ul>
-      <Switch defaultOn={theme === 'dark'} onChange={toggleTheme} />
+      <Switch defaultOn={theme === 'dark'} onChange={setTheme} />
     </nav>
   )
 }

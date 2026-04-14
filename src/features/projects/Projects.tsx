@@ -30,7 +30,7 @@ export const Projects: React.FC = () => {
 
   return (
     <div className="project-container">
-      <h1>Proyectos</h1>
+      <h1>PROYECTOS</h1>
       <p className="project-description">A continuación podrás ver algunos de los proyectos destacados en los que he trabajado, personales y empresariales:</p>
       {projects.map((project, index) => (
         <Card key={index} title={project.title} description={project.description} languages={project.languages} />

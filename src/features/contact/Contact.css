@@ -18,6 +18,7 @@
   width: 100%;
   padding: 18px 14px;
   font-size: 16px;
+  color: #000;
 
   background-color: var(--input-bg);
   border: 1px solid #ccc;
@@ -31,6 +32,7 @@
   width: 100%;
   padding: 18px 14px;
   font-size: 16px;
+  color: #000;
 
   background-color: var(--input-bg);
   border: 1px solid #ccc;
@@ -58,20 +60,24 @@
 .input-group input:focus + label {
   transform: translateY(-50%);
   font-size: 11px !important;
-  color: #000;
+  color: #555555;
 }
 
 .input-group textarea:focus + label {
   transform: translateY(-50%);
   font-size: 11px !important;
-  color: #000;
+  color: #555;
 }
 
 /* cuando el input tiene texto */
-
 .input-group input:not(:placeholder-shown) + label {
   top: 8px;
-  font-size: 12px;
+  font-size: 11px;
+}
+
+.input-group textarea:not(:placeholder-shown) + label {
+  transform: translateY(-50%);
+  font-size: 11px !important;
 }
 
 .contact-form button {

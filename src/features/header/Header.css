@@ -6,7 +6,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 0 5% 10%;
+  padding: 0 0 5.5% 13%;
 }
 
 header h1 {
@@ -42,9 +42,11 @@ header h2 {
 .avatar {
   align-self: center;
   justify-self: center;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 
-  img {
-    width: 18vw;
+  svg {
+    width: 50vh;
+    fill: var(--accent);
+
   }
 }

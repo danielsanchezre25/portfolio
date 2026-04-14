@@ -19,7 +19,7 @@ export const Contact: React.FC = () => {
           <label htmlFor="email">Email</label>
         </div>
         <div className="input-group">
-          <textarea id="message" name="message"></textarea>
+          <textarea id="message" name="message" placeholder=" "></textarea>
           <label htmlFor="message">Mensaje</label>
         </div>
         <button type="submit">Envíar mensaje</button>
