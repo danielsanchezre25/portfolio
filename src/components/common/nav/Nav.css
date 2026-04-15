@@ -29,7 +29,12 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.3s;
+  transition: 0.5s;
+
+  &:hover {
+    color: var(--accent);
+    font: 20px;
+  }
 }
 
 .nav-logo {
@@ -45,4 +50,13 @@ a {
 
 .dot {
   color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+  nav {
+  }
+
+  ul {
+    display: none;
+  }
 }

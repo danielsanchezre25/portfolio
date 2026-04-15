@@ -1,4 +1,9 @@
 .about-container {
-  padding-right: 80px;
+  padding-right: 6vw;
   margin-bottom: 10rem;
+
+  @media (max-width: 1024px) {
+    padding-right: 0;
+    margin-bottom: 6rem;
+  }
 }
