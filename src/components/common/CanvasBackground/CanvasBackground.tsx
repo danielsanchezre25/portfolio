@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useTheme } from "../../../hooks/ThemeContext/ThemeContext";
 
 type Circle = {
   x: number;
@@ -10,6 +11,7 @@ const CELL_SIZE = 40;
 const MAX_RADIUS = 5;
 
 export default function CanvasBackground() {
+  const { theme } = useTheme();
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const circles = useRef<Circle[]>([]);
   const mouse = useRef({ x: 0, y: 0 });
@@ -48,12 +50,12 @@ export default function CanvasBackground() {
 
         const radius = Math.max(
           1,
-          MAX_RADIUS - dist * 0.03
+          MAX_RADIUS - dist * 0.02
         );
 
         ctx.beginPath();
         ctx.arc(circle.x, circle.y, radius, 0, Math.PI * 2);
-        ctx.fillStyle = "#4f7cff";
+        ctx.fillStyle = theme === 'dark' ? '#004b4b' : '#fdb270';
         ctx.fill();
       });
 
@@ -75,7 +77,7 @@ export default function CanvasBackground() {
       window.removeEventListener("resize", resizeCanvas);
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
+  }, [theme]);
 
   return <canvas ref={canvasRef} className="canvas-background" />;
 }

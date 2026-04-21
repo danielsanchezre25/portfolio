@@ -10,15 +10,15 @@ export const Projects: React.FC = () => {
       description: 'Eunifi systems allow the customer to prequalify with a soft credit pull at the beginning of the sales process, ' + 
       'allowing the sales staff to focus on qualified customers, while reducing dealership credit costs, and increasing online lead ' + 
       'generation.', 
-      languages: ['React', 'TypeScript'],
-      url: 'https://www.eunifi.com/'
+      languages: ['NextJS', 'TypeScript', 'Sass', 'Redux', 'Django', 'PostgreSQL'],
+      url: 'https://eunifi.com/'
     },
     { 
       title: 'Erdos Tracks', 
       description: 'Erdos Tracks is a cloud-based software for service businesses looking to increase profitability by creating a ' + 
       'more productive workforce and delivering a more engaging customer experience.', 
-      languages: ['JavaScript', 'CSS'],
-      url: 'https://www.erdostracks.com/'
+      languages: ['ReactJS', 'TypeScript', 'Redux', 'Material UI'],
+      url: 'https://erdostracks.com/'
     },
     { 
       title: 'Friend of Hope, International', 
@@ -26,14 +26,17 @@ export const Projects: React.FC = () => {
       'Having worked in humanitarian disaster relief, project development and the collaboration of sustainable projects in Latin ' + 
       'America and the Caribbean, Mr. Batista, Mrs. Fernandez & Mr. Almonte felt the need to work independently with a group of ' + 
       'like-minded individuals to help empower others to forge their way out of poverty.', 
-      languages: ['Python', 'Django'],
+      languages: ['HTML5', 'CSS3', 'PHP', 'GoDaddy'],
       url: 'https://friendsofhopeintl.org/'
     },
   ];
 
   return (
     <div className="project-container">
-      <h1>PROYECTOS</h1>
+      <h1 style={{ position: "relative" }}>
+        PROYECTOS
+        <div className='project-title-line'></div>
+      </h1>
       <p className="project-description">A continuación podrás ver algunos de los proyectos destacados en los que he trabajado, personales y empresariales:</p>
       {projects.map((project, index) => (
         <Card 

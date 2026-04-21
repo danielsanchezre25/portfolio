@@ -6,3 +6,21 @@
 .project-description {
   margin-bottom: 40px;
 }
+
+.project-title-line {
+  position: absolute; 
+  top: 4px; 
+  left: 39%; 
+  right: 0px; 
+  width: 60%; 
+  height: 15px;
+  background-color: var(--accent);
+
+  @media (max-width: 1024px) {
+    top: 4px; 
+    left: 60%; 
+    right: 0px; 
+    width: 50%; 
+    height: 15px;
+  }
+}

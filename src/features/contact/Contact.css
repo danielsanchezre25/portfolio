@@ -5,7 +5,7 @@
 
 .contact-title {
   width: 100%;
-  
+  position: relative;
   text-transform: uppercase;
   margin-bottom: 2rem;
   line-height: 45px;
@@ -14,6 +14,24 @@
 .input-group {
   position: relative;
   margin: 20px 0;
+}
+
+.contact-title-line {
+  position: absolute; 
+  top: 14px; 
+  left: 70%; 
+  right: 0px; 
+  width: 35%; 
+  height: 15px;
+  background-color: var(--accent);
+
+  @media (max-width: 1024px) {
+    top: 14px; 
+    left: 68vw; 
+    right: 0px; 
+    width: calc(20% - 20px); 
+    height: 15px;
+  }
 }
 
 .input-group input {
@@ -73,8 +91,8 @@
 
 /* cuando el input tiene texto */
 .input-group input:not(:placeholder-shown) + label {
-  top: 8px;
-  font-size: 11px;
+  transform: translateY(-50%);
+  font-size: 11px !important;
 }
 
 .input-group textarea:not(:placeholder-shown) + label {
@@ -83,8 +101,9 @@
 }
 
 .contact-form button {
-  width: 104%;
+  width: calc(100% + 30px);
   padding: 14px;
+  transition: all 0.3s ease;
 
   background: var(--accent);
   border: none;
@@ -97,5 +116,5 @@
 
 .contact-form button:hover {
   transform: scale(1.02);
-  background: #1ed760;
+  background: var(--text);
 }

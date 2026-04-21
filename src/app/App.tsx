@@ -7,6 +7,7 @@ import { Projects } from '../features/projects/Projects'
 import Header from '../features/header/Header'
 import { ThemeProvider } from '../hooks/ThemeContext/ThemeProvider'
 import CanvasBackground from '../components/common/CanvasBackground/CanvasBackground'
+import Footer from '../components/common/footer/Footer'
 
 function App() {
   return (
@@ -14,9 +15,16 @@ function App() {
       <Nav />
       <Header />
       <section className='main-section'>
-        <About />
-        <Projects />
-        <Contact />
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+        <Footer />
       </section>
       <div className='canvas-container'>
         <CanvasBackground />

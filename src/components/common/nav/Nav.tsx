@@ -9,7 +9,7 @@ export const Nav: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 80);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -24,9 +24,9 @@ export const Nav: React.FC = () => {
         DS<span className="dot">.</span>
       </div>
       <ul>
-        <li><a href="/about">Acerca de</a></li>
-        <li><a href="/projects">Proyectos</a></li>
-        <li><a href="/contact">Contacto</a></li>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
       </ul>
       <Switch defaultOn={theme === 'dark'} onChange={setTheme} />
     </nav>

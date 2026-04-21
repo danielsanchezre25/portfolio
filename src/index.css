@@ -10,7 +10,7 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
   --card: #fff;
-
+  --card-text: #202020;
   color: var(--text);
   background: var(--bg);
 }
@@ -19,7 +19,7 @@
   --text: #e2e2e2;
   --text-h: #ffffff;
   --bg: #002e42;
-  --bg: linear-gradient(1deg,rgb(0, 57, 82) 0%, rgba(0, 25, 36, 1) 100%);
+  --bg: linear-gradient(1deg,rgb(0, 45, 65) 0%, rgba(0, 25, 36, 1) 100%);
   --accent: #fea02f;
   --accent-bg: rgba(254, 160, 47, 0.1);
   --accent-border: rgba(254, 160, 47  , 0.5);
@@ -46,6 +46,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 
   @media (max-width: 1024px) {
     font-size: 16px;
