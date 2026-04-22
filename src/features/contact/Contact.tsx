@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import { Alert } from '../../components/common/alert/Alert';
+import { useTranslation } from 'react-i18next';
 
 export const Contact: React.FC = () => {
+  const { t } = useTranslation();
 
-  const [result, setResult] = useState("");
+  const [showAlert, setShowAlert] = useState(false);
+  const [typeAlert, setTypeAlert] = useState<'success' | 'warning' | 'error' | undefined>(undefined);
+  const [messageAlert, setMessageAlert] = useState('');
+
 
   const onSubmitContact = async(e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -16,18 +22,25 @@ export const Contact: React.FC = () => {
     });
 
     const data = await response.json();
-    setResult(data.success ? "Success!" : "Error");
+    if (data.success) {
+      setTypeAlert('success');
+      setMessageAlert('¡Mensaje enviado correctamente!');
+    } else {
+      setTypeAlert('error');
+      setMessageAlert('¡Error al enviar el mensaje!');
+    }
+    setShowAlert(true);
   }
 
   return (
     <div className="contact-container">
       <h1 className="contact-title">
-       Contacta conmigo
-       <div className='contact-title-line'></div>
+        {t('contact.title_friendly')}
+        <div className='contact-title-line'></div>
       </h1>
       <p>
-        Si quieres ponerte en contacto, tienes alguna pregunta o quieres desarrollar algún proyecto y no sabes cómo hacerlo, 
-        entonces preguntame:
+        Si tienes alguna idea, quieres desarrollar algún proyecto y no sabes cómo hacerlo, o simplemente quieres conectar 
+        estaré encantado de leerte:
       </p>
       <form className="contact-form" onSubmit={onSubmitContact}>
         <div className="input-group">
@@ -44,6 +57,7 @@ export const Contact: React.FC = () => {
         </div>
         <button type="submit">Envíar mensaje</button>
       </form>
+      {showAlert && <Alert message={messageAlert} type={typeAlert} duration={2000} onClose={() => setShowAlert(false)} />}
     </div>
   )
 }

@@ -24,7 +24,7 @@
   color: var(--accent);
 }
 
-.languages {
+.chips {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
 
 }
 
-.languages span {
+.chips span {
   background-color: transparent;
   border: 1px solid var(--accent);
   color: var(--card-text);

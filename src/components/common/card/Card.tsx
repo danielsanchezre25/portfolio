@@ -1,24 +1,24 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Card.css';
 
 interface CardProps {
   title: string;
   description: string;
-  languages?: string[];
+  chips?: string[];
   url?: string;
 }
 
-export const Card: React.FC<CardProps> = ({ title, description, languages, url }) => {
+export const Card: React.FC<CardProps> = ({ title, description, chips , url }) => {
   return (
     <a href={url} target="_blank">
       <div className="card">
         <h3>{title}</h3>
         <p>{description}</p>
-        {languages && (
-          <div className="languages">
-            {languages.map((lang, index) => (
-              <span key={index} className="language">
-                {lang}
+        {chips && (
+          <div className="chips">
+            {chips.map((chip, index) => (
+              <span key={index} className="chip">
+                {chip}
               </span>
             ))}
           </div>

@@ -8,6 +8,8 @@ import Header from '../features/header/Header'
 import { ThemeProvider } from '../hooks/ThemeContext/ThemeProvider'
 import CanvasBackground from '../components/common/CanvasBackground/CanvasBackground'
 import Footer from '../components/common/footer/Footer'
+import Language from '../components/common/language/Language'
+import "../translations/i18n"
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
       <div className='canvas-container'>
         <CanvasBackground />
       </div>
+      <Language />
     </ThemeProvider>
   )
 }

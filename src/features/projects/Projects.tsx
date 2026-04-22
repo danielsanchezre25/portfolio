@@ -1,8 +1,10 @@
 import React from 'react';
 import './Projects.css';
 import { Card } from '../../components/common/card/Card';
+import { useTranslation } from 'react-i18next';
 
 export const Projects: React.FC = () => {
+  const { t } = useTranslation();
 
   const projects = [
     { 
@@ -10,14 +12,14 @@ export const Projects: React.FC = () => {
       description: 'Eunifi systems allow the customer to prequalify with a soft credit pull at the beginning of the sales process, ' + 
       'allowing the sales staff to focus on qualified customers, while reducing dealership credit costs, and increasing online lead ' + 
       'generation.', 
-      languages: ['NextJS', 'TypeScript', 'Sass', 'Redux', 'Django', 'PostgreSQL'],
+      chips: ['NextJS', 'TypeScript', 'Sass', 'Redux', 'Django', 'PostgreSQL'],
       url: 'https://eunifi.com/'
     },
     { 
       title: 'Erdos Tracks', 
       description: 'Erdos Tracks is a cloud-based software for service businesses looking to increase profitability by creating a ' + 
       'more productive workforce and delivering a more engaging customer experience.', 
-      languages: ['ReactJS', 'TypeScript', 'Redux', 'Material UI'],
+      chips: ['ReactJS', 'TypeScript', 'Redux', 'Material UI'],
       url: 'https://erdostracks.com/'
     },
     { 
@@ -26,7 +28,7 @@ export const Projects: React.FC = () => {
       'Having worked in humanitarian disaster relief, project development and the collaboration of sustainable projects in Latin ' + 
       'America and the Caribbean, Mr. Batista, Mrs. Fernandez & Mr. Almonte felt the need to work independently with a group of ' + 
       'like-minded individuals to help empower others to forge their way out of poverty.', 
-      languages: ['HTML5', 'CSS3', 'PHP', 'GoDaddy'],
+      chips: ['HTML5', 'CSS3', 'PHP', 'GoDaddy'],
       url: 'https://friendsofhopeintl.org/'
     },
   ];
@@ -34,7 +36,7 @@ export const Projects: React.FC = () => {
   return (
     <div className="project-container">
       <h1 style={{ position: "relative" }}>
-        PROYECTOS
+        {t('projects.title')}
         <div className='project-title-line'></div>
       </h1>
       <p className="project-description">A continuación podrás ver algunos de los proyectos destacados en los que he trabajado, personales y empresariales:</p>
@@ -43,7 +45,7 @@ export const Projects: React.FC = () => {
           key={index} 
           title={project.title} 
           description={project.description} 
-          languages={project.languages} 
+          chips={project.chips} 
           url={project.url} 
         />
       ))}

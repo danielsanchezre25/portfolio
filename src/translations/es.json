@@ -1,0 +1,12 @@
+  {
+    "about": {
+      "title": "Acerca de mí"
+    },
+    "projects": {
+      "title": "Proyectos"
+    },
+    "contact": {
+      "title": "Contacto",
+      "title_friendly": "Contacta conmigo"
+    }
+  }

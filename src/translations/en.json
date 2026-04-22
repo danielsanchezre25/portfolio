@@ -1,0 +1,12 @@
+  {
+    "about": {
+      "title": "About"
+    },
+    "projects": {
+      "title": "Projects"
+    },
+    "contact": {
+      "title": "Contact",
+      "title_friendly": "Contact me"
+    }
+  }
