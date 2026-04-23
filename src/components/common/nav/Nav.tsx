@@ -24,6 +24,7 @@ export const Nav: React.FC = () => {
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
       <div className='nav-logo'>
         DS<span className="dot">.</span>
+        <div className='tooltip'>{t('welcome')}👋</div>
       </div>
       <ul>
         <li>

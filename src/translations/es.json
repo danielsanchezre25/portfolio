@@ -1,4 +1,5 @@
   {
+    "welcome": "¡Bienvenido!",
     "role": "Desarrollador Fullstack",
     "about": {
       "title": "Acerca de mí",
@@ -13,7 +14,8 @@
         "problems": "problemas",
         "but": ", sino que dé gusto usar. Me motiva diseñar interfaces que fluyan con naturalidad y que sean accesibles para todos, priorizando siempre la eficiencia y el valor real para el ",
         "user": "usuario"
-      }
+      },
+      "download_resume": "Descargar CV"
     },
     "projects": {
       "title": "Proyectos",

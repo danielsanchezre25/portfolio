@@ -1,4 +1,5 @@
   {
+    "welcome": "Welcome!",
     "role": "Fullstack Developer",
     "about": {
       "title": "About",
@@ -13,7 +14,8 @@
         "problems": "problems",
         "but": ", but that also provide a great user experience. I am motivated to design interfaces that flow naturally and are accessible to everyone, always prioritizing efficiency and real value for the ",
         "user": "user"
-      }
+      },
+      "download_resume": "Download Resume"
     },
     "projects": {
       "title": "Projects",

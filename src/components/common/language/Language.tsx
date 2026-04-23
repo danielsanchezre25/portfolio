@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 export const Language: React.FC = () => {
   const { i18n } = useTranslation();
-  const [isEnglish, setIsEnglish] = React.useState(false);
+  const [isEnglish, setIsEnglish] = React.useState(i18n.language === 'en');
 
   const handleToggleLanguage = () => {
     i18n.changeLanguage(isEnglish ? 'es' : 'en');
