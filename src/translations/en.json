@@ -1,12 +1,41 @@
   {
+    "role": "Fullstack Developer",
     "about": {
-      "title": "About"
+      "title": "About",
+      "description": {
+        "i-am": "I am a ",
+        "fullstack": "Fullstack developer ",
+        "solutions": "convinced that the best solutions are born from curiosity and care for detail. I specialize in the ",
+        "javascript": "JavaScript ecosystem (React, NextJS, NestJS) and Python (Django), ",
+        "creating": " creating solid architectures in ",
+        "postgresql": "PostgreSQL and MongoDB",
+        "focus": "My approach is simple: create digital tools that not only solve ",
+        "problems": "problems",
+        "but": ", but that also provide a great user experience. I am motivated to design interfaces that flow naturally and are accessible to everyone, always prioritizing efficiency and real value for the ",
+        "user": "user"
+      }
     },
     "projects": {
-      "title": "Projects"
+      "title": "Projects",
+      "description": "Below you can see some of the featured projects I have worked on, both personal and business. Feel free to check them out!",
+      "eunifi-description": "Eunifi systems allow the customer to prequalify with a soft credit pull at the beginning of the sales process, allowing the sales staff to focus on qualified customers, while reducing dealership credit costs, and increasing online lead generation.",
+      "erdos-description": "Erdos Tracks is a cloud-based software for service businesses looking to increase profitability by creating a more productive workforce and delivering a more engaging customer experience.",
+      "foh-description": "Friends of Hope International, Inc was founded by Esteban Almonte, Carmen L. Fernandez & Liony Batista. After working in humanitarian aid in disaster situations, project development and collaboration on sustainable projects in Latin America and the Caribbean, Mr. Batista, Ms. Fernandez and Mr. Almonte felt the need to work independently with a group of like-minded individuals to help empower others to rise out of poverty. "
     },
     "contact": {
       "title": "Contact",
-      "title_friendly": "Contact me"
+      "title_friendly": "Contact me",
+      "description": "If you have an idea, want to develop a project and don't know how, or simply want to connect with me, I'd be happy to hear from you:",
+      "form_fields": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send Message"
+      }
+    },
+    "footer": {
+      "rights": "All rights reserved.",
+      "built_with": "Built with ",
+      "deployed_on": " Deployed on "
     }
   }

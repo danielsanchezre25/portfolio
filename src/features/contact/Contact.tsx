@@ -39,23 +39,22 @@ export const Contact: React.FC = () => {
         <div className='contact-title-line'></div>
       </h1>
       <p>
-        Si tienes alguna idea, quieres desarrollar algún proyecto y no sabes cómo hacerlo, o simplemente quieres conectar 
-        estaré encantado de leerte:
+        {t('contact.description')}
       </p>
       <form className="contact-form" onSubmit={onSubmitContact}>
         <div className="input-group">
           <input type="text" id="name" name="name" placeholder=" " />
-          <label htmlFor="name">Nombre</label>
+          <label htmlFor="name">{t('contact.form_fields.name')}</label>
         </div>
         <div className="input-group">
           <input type="email" id="email" name="email" placeholder=" " />
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">{t('contact.form_fields.email')}</label>
         </div>
         <div className="input-group">
           <textarea id="message" name="message" placeholder=" "></textarea>
-          <label htmlFor="message">Mensaje</label>
+          <label htmlFor="message">{t('contact.form_fields.message')}</label>
         </div>
-        <button type="submit">Envíar mensaje</button>
+        <button type="submit">{t('contact.form_fields.submit')}</button>
       </form>
       {showAlert && <Alert message={messageAlert} type={typeAlert} duration={2000} onClose={() => setShowAlert(false)} />}
     </div>

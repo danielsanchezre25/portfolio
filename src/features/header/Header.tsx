@@ -2,16 +2,18 @@ import React from 'react';
 import './Header.css';
 import LaptopIcon from '../../components/common/laptopIcon/LaptopIcon';
 import { useTheme } from '../../hooks/ThemeContext/ThemeContext';
+import { useTranslation } from 'react-i18next';
 
 export const Header: React.FC = () => {
   const { theme } = useTheme();
+  const { t } = useTranslation();
   return (
     <header>
       <div className="avatar">
         <LaptopIcon isDarkMode={theme !== 'dark'} />
       </div>
       <h1>Daniel Sánchez Restrepo</h1>
-      <h2>Fullstack Engineer</h2>
+      <h2>{t('role')}</h2>
       <div className="networks">
         <a href="https://github.com/danielsanchezre25" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="network" viewBox="0 0 16 16">

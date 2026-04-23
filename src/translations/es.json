@@ -1,12 +1,41 @@
   {
+    "role": "Desarrollador Fullstack",
     "about": {
-      "title": "Acerca de mí"
+      "title": "Acerca de mí",
+      "description": {
+        "i-am": "Soy un ",
+        "fullstack": "desarrollador Fullstack ",
+        "solutions": "convencido de que las mejores soluciones nacen de la curiosidad y el cuidado por el detalle. Me especializo en el ecosistema de ",
+        "javascript": "JavaScript (React, NextJS, NestJS) y Python (Django), ",
+        "creating": " creando arquitecturas sólidas en ",
+        "postgresql": "PostgreSQL y MongoDB",
+        "focus": "Mi enfoque es simple: crear herramientas digitales que no solo resuelvan ",
+        "problems": "problemas",
+        "but": ", sino que dé gusto usar. Me motiva diseñar interfaces que fluyan con naturalidad y que sean accesibles para todos, priorizando siempre la eficiencia y el valor real para el ",
+        "user": "usuario"
+      }
     },
     "projects": {
-      "title": "Proyectos"
+      "title": "Proyectos",
+      "description": "A continuación podrás ver algunos de los proyectos destacados en los que he trabajado, personales y empresariales. ¡Echales un vistazo!",
+      "eunifi-description": "Los sistemas de Eunifi permiten al cliente precalificar mediante una consulta de crédito superficial al inicio del proceso de venta, lo que permite al personal de ventas centrarse en los clientes cualificados, al tiempo que reduce los costes de crédito del concesionario y aumenta la generación de clientes potenciales en línea.",
+      "erdos-description": "Erdos Tracks es un software basado en la nube para empresas de servicios que buscan aumentar su rentabilidad mediante la creación de una fuerza laboral más productiva y la prestación de una experiencia de cliente más atractiva.",
+      "foh-description": "Friends of Hope International, Inc fue fundada por Esteban Almonte, Carmen L. Fernandez & Liony Batista. Tras trabajar en la ayuda humanitaria en situaciones de desastre, el desarrollo de proyectos y la colaboración en proyectos sostenibles en América Latina y el Caribe, el Sr. Batista, la Sra. Fernandez y el Sr. Almonte sintieron la necesidad de trabajar independientemente con un grupo de individuos afines para ayudar a empoderar a otros a salir de la pobreza."
     },
     "contact": {
       "title": "Contacto",
-      "title_friendly": "Contacta conmigo"
+      "title_friendly": "Contacta conmigo",
+      "description": "Si tienes alguna idea, quieres desarrollar algún proyecto y no sabes cómo hacerlo, o simplemente quieres conectar conmigo, estaré encantado de leerte:",
+      "form_fields": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "message": "Mensaje",
+        "submit": "Enviar mensaje"
+      }
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados.",
+      "built_with": "Desarrollado con ",
+      "deployed_on": " Desplegado en "
     }
   }
