@@ -1,4 +1,3 @@
-import { useState, useEffect, createContext } from 'react'
 import './App.css'
 import Nav from '../components/common/nav/Nav'
 import { Contact } from '../features/contact/Contact'
