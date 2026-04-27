@@ -1,6 +1,6 @@
 .main-section {
   margin-top: 11rem;
-  margin-left: 52vw;
+  margin-left: calc(55% - 45px);
   padding-right: 10rem;
   z-index: 1;
 
