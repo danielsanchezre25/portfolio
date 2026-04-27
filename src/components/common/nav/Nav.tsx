@@ -18,7 +18,7 @@ export const Nav: React.FC = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  });
+  }, [window.scrollY]);
 
   return (
     <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
