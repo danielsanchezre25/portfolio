@@ -1,13 +1,14 @@
 .card {
-  width: 100%;
+  position: relative;
+  max-width: 100%;
   background-color: transparent;
   border-radius: 8px;
   padding: 20px;
-  /* border: 1px solid var(--accent); */
   transition: transform 0.5s, box-shadow 0.5s;
   margin-bottom: 20px;
   z-index: 2;
   color: var(--card-text);
+  word-break: break-word;
 
   &:hover {
     transform: translateY(-5px);
@@ -16,7 +17,7 @@
   }
   
   @media (max-width: 1024px) {
-      width: calc(100% - 20px);
+    max-width: calc(100% - 8cqw);
   }
 }
 

@@ -29,22 +29,24 @@ export const Projects: React.FC = () => {
 
   return (
     <div className="project-container">
-      <h1 style={{ position: "relative" }}>
+      <h1 className="project-title">
         {t('projects.title')}
         <div className='project-title-line'></div>
       </h1>
       <p className="project-description">
         {t('projects.description')}
       </p>
-      {projects.map((project, index) => (
-        <Card 
-          key={index} 
-          title={project.title} 
-          description={project.description} 
-          chips={project.chips} 
-          url={project.url} 
-        />
-      ))}
+      <div style={{ width: "100%", position: "relative", boxSizing: "border-box" }}>
+        {projects.map((project, index) => (
+          <Card 
+            key={index} 
+            title={project.title} 
+            description={project.description} 
+            chips={project.chips} 
+            url={project.url} 
+          />
+        ))}
+      </div>
     </div>
   );
 }

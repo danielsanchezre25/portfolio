@@ -1,6 +1,19 @@
 .project-container {
   margin-bottom: 10rem;
   padding-right: 5vw;
+
+  @media (max-width: 1024px) {
+    padding-right: 0;
+  }
+}
+
+.project-title {
+  position: relative;
+  font-size: 3cqw;
+
+  @media (max-width: 1024px) {
+    font-size: 2rem;
+  }
 }
 
 .project-description {
@@ -10,17 +23,15 @@
 .project-title-line {
   position: absolute; 
   top: 4px; 
-  left: 39%; 
   right: 0px; 
-  width: 60%; 
+  width: calc(60% - 10px); 
   height: 15px;
   background-color: var(--accent);
 
   @media (max-width: 1024px) {
     top: 4px; 
-    left: 60%; 
     right: 0px; 
-    width: 50%; 
+    width: calc(50% - 2px); 
     height: 15px;
   }
 }

@@ -9,6 +9,11 @@
     margin-left: 12vw;
     padding-right: 3.5rem;
   }
+
+  @media (min-width: 1025px) and (max-width: 1400px) {
+    padding-right: 0;
+    margin-left: calc(55% - 15px);
+  }
 }
 
 .canvas-container {
